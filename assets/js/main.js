@@ -44,12 +44,17 @@
 
 		// Title Bar.
 			$(
+				//'<div id="titleBar">' +
+				//	'<a href="#navPanel" class="toggle"></a>' +
+				//	'<span class="title">' + $('#logo').html() + '</span>' +
+				//'</div>'
 				'<div id="titleBar">' +
 					'<a href="#navPanel" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
+					'<span class="title"><img height="44px;" src="images/logoipin2021small.svg"></span>' +
 				'</div>'
 			)
 				.appendTo($body);
+
 
 		// Panel.
 			$(

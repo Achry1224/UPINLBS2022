@@ -17,6 +17,11 @@
 				href = $this.attr('href'),
 				target = $this.attr('target');
 
+			$currentText = $this.text();
+			if ($currentText == "")
+				$currentText = "Home";
+			 
+
 			b.push(
 				'<a ' +
 					'class="link depth-' + indent + '"' +
@@ -24,7 +29,7 @@
 					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
 				'>' +
 					'<span class="indent-' + indent + '"></span>' +
-					$this.text() +
+					$currentText+
 				'</a>'
 			);
 

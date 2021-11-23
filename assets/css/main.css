@@ -2328,7 +2328,9 @@ input, select, textarea {
 		font-weight: 700;
 		text-transform: uppercase;
 		padding: 0.25em 0;
-		border-bottom: 1em solid #2f4c7b;
+		/* border-bottom: 1em solid #2f4c7b; */
+		/* TODO:头部横条颜色这里改 */
+		border-bottom: 1em solid #006376;
 		background: #fff;
 		margin: 0 auto;
 	}
@@ -2411,7 +2413,9 @@ input, select, textarea {
 				display: block;
 				text-decoration: none;
 				/*color: #6b7770;*/
-				color: #2f4c7b;
+				/* color: #2f4c7b; */
+				/* TODO:这里改头部文字颜色 */
+				color: #006376;
 				top: -6px;
 				/*padding: 6px 1.5em 0.25em 1.5em;*/
 				padding: 6px 0.25em 0.125em 0.25em;
@@ -2441,7 +2445,9 @@ input, select, textarea {
 			#nav li.current a {
 				/*background: #b1ddab;
 				color: #fff;*/
-				background: #2f4c7b;
+				/* background: #2f4c7b; */
+				/* TODO:这个改header标签颜色 */
+				background: #006376;
 				color: #fff;
 			}
 

@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>UPINLBS 2022 - How to Arrive</title>
+		<title>UPINLBS 2022 - Confirm and Contact</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -61,7 +61,7 @@
 							</ul>
 						</li>
 						
-						<li> <a href="#">Registration</a>
+						<li class="current"> <a href="#">Registration</a>
 							<ul>
 								<li><a href="registrationfees.html">Registration Fees</a></li>
 								<li><a href="confirmandcontact.html">Confirm and Contact</a></li>
@@ -70,7 +70,7 @@
 						
 
 						<!--beginvenue-->
-						<li class="current"> <a href="#">Venue</a>	
+						<li> <a href="#">Venue</a>	
 							<ul>
 								<li><a href="conferencevenue.html">Conference venue</a></li>
 								<li><a href="howtoarrive.html">How to arrive</a></li>
@@ -93,59 +93,25 @@
 						<div class="col-9 col-12-medium">
 							<div class="content">
 								<header>
-									<h2>How to Arrive</h2>
+									<h2>Registration Fees</h2>
 									<ul class="meta">
 										Last Update <li class="icon fa-clock"> 26/Dec/2021</li>
 									</ul>
 								</header>
 
-								<!-- map -->
 								<section>
-									<div class="row">
-										<div class="col-12 col-12-medium col-12-small">
-											<div id="map" style="height: 400px;"></div>
-										</div>
-									</div>
-								</section>
-
-								<section>
-									<div class="row">
-										<div class="col-12 col-12-medium col-12-small">
-											<p><strong> First of all, you have to arrive in Wuhan by plane or train, and then you can choose different ways to reach the UPINLBS2022 meeting place.
-												Wuhan’s airport is called Tianhe Airport, and Wuhan’s railway stations include Wuhan Station, Hankou Station and Wuchang Station.
-											</strong></p>
-										</div>
-									</div>
-								</section>
-
-								<!-- vehicle -->
-								<section>
-									<div style="margin:0 auto; text-align: center;">
-										<div class="row">
-											<div class="col-4 col-12-medium col-12-small">
-												<ul class="special">
-													<li><h3>Taxi</h3><a href="#" class="icon solid fa-taxi" target="_blank"><span class="label">Taxi</span></a></li>
-													<p style="text-align: justify;">You can call a taxi and tell the driver that you are going to the south gate of the Department of Informatics of Wuhan University in Guangbutun.</p>
-												</ul>
-											</div>
-											<div class="col-4 col-12-medium col-12-small">
-												<ul class="special">
-													<li><h3>Subway</h3><a href="#" class="icon solid fa-subway" target="_blank"><span class="label">Subway</span></a></li>
-													<p style="text-align: justify;">The nearest subway station is Guangbutun Station located in Luo Yu Road of Line 2.</p>
-												</ul>
-											</div>
-											<div class="col-4 col-12-medium col-12-small">
-												<ul class="special">
-													<li><h3>Bus</h3><a href="#" class="icon solid fa-bus" target="_blank"><span class="label">Bus</span></a></li>
-													<p style="text-align: justify;">The nearest bus station is Guangbutun Station,whitch has 510, 518, 521, 538, 59, 703, 715, 728, 804, 905, YX518 and YX703 buses.</p>
-												</ul>
-											</div>
-										</div>
-									</div>
+                                    <ul>
+										<li>Participants are requested to email the return receipt to the conference affairs team's mailbox <a href="mailto:upinlbs@yeah.net" target="_blank">upinlbs@yeah.net</a> before March 1, 2022.</li>
+                                        <li>Conference Contact: Shi Lite and Yang Xianjia</li>
+                                        <li>Email: upinlbs@yeah.net</li>
+                                        <li>Office phone number: 027-87731869</li>
+                                        <li>Contact phone number: 18071146339 (same number on WeChat)</li>
+                                        <li>Address: State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University (Zip code 430079)</li>
+									</ul>							
 								</section>
 							</div>
 						</div>
-
+						
 						<!-- Sidebar -->
 						<div class="col-3 col-12-medium">
 							<div class="sidebar">
@@ -260,64 +226,6 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qmMVXNkmRuMD4Z3lHH9zMdgxOjvzoOz5"></script>
-		<script>
-			//创建和初始化地图函数：
-			function initMap(){
-				createMap();//创建地图
-				setMapEvent();//设置地图事件
-				addMapControl();//向地图添加控件
-				addMapOverlay();//向地图添加覆盖物
-			}
-			function createMap(){ 
-				map = new BMap.Map("map"); 
-				map.centerAndZoom(new BMap.Point(114.362311,30.533546),15);
-			}
-			function setMapEvent(){
-				map.enableScrollWheelZoom();
-				map.enableKeyboard();
-				map.enableDragging();
-				map.enableDoubleClickZoom()
-			}
-			function addClickHandler(target,window){
-				target.addEventListener("click",function(){
-					target.openInfoWindow(window);
-				});
-			}
-			function addMapOverlay(){
-				var markers = [
-					{content:"Academic Lecture Hall 305, Xinghu Comprehensive Experimental Building, Faculty of Information Science, Wuhan University",title:"UPINLBS2022 Conference Venue",imageOffset: {width:0,height:-21},position:{lat:30.533546,lng:114.362311}}
-				];
-				for(var index = 0; index < markers.length; index++ ){
-					var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
-					var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
-					imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
-					})});
-					var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
-					var opts = {
-					width: 200,
-					title: markers[index].title,
-					enableMessage: false
-					};
-					var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
-					marker.setLabel(label);
-					addClickHandler(marker,infoWindow);
-					map.addOverlay(marker);
-				};
-			}
-			//向地图添加控件
-			function addMapControl(){
-				var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-				scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
-				map.addControl(scaleControl);
-				var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-				map.addControl(navControl);
-				var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
-				map.addControl(overviewControl);
-			}
-			var map;
-			initMap();
-		</script>
 
 	</body>
 </html>

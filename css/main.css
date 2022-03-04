@@ -1,0 +1,556 @@
+/* ==========================================================================
+    Styles added by Domingo
+
+    Last Updated: June 2014
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+#carousel {
+    margin-bottom: 35px;
+}
+#carousel {
+    height: 130px !important;
+}
+#carousel img {
+    cursor: pointer;
+    opacity: .5;
+}
+#carousel img:hover {
+    opacity: 1;
+}
+#carousel .flex-active-slide img {
+    opacity: 1;
+}
+#ufiles {
+    list-style: none;
+}
+#ufiles li {
+    margin: 36px 12px;
+    float: left;
+}
+#ufiles a {
+    padding: 24px;
+    background-color: #666;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+}
+#ufiles a:hover {
+    background-color: #333;
+    text-decoration: none;
+}
+.ufile-dl {
+    float:right;
+    padding-right: 10px;
+    font-size: 18px;
+    line-height: 24px;
+}
+.ufile-dl a:hover { text-decoration: none; }
+.event-title {
+    font-size: 18px !important;
+}
+.label-event {
+    padding: 4px 10px !important;
+    margin-right: 5px;
+    background-color: #337ab7 !important;
+}
+.event-talk {
+    display: block;
+    margin-bottom: 10px;
+}
+#tabs {
+    margin-bottom: 0 !important;
+}
+#my-tab-content {
+    border-radius: 0 8px 8px 8px;
+    padding: 10px 0px;
+}
+.hr-event {
+    border: none;
+    border-top: 1px dotted #C6C5C1;
+}
+#sponsor-dropdown li.sponsor-li > a {
+    margin-bottom: 3px !important;
+    background-color: #fff !important;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+}
+#sponsor-dropdown li.sponsor-li > a:hover { 
+    background: none;
+    border-left: 5px solid #0088cc;
+    border-right: 5px solid #0088cc;
+}
+.media-body { width: 50% !important; }
+.sponsors:hover > .stretch span { background-color: #6f6f6f; }
+.sponsors:hover > .stretch { border-bottom: 1px dotted #aaa; }
+.sponsors { margin-top: 28px; text-align: center; }
+.logos h3 { color: #d3d3d3; margin: 0; }
+.logos h3 a { color: #B3E6FF; }
+.logos h3 a:hover { text-decoration: none; color: #80D4FF; }
+
+.sponsors .stretch {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.stretch span { 
+    letter-spacing: .2em; 
+    position: relative; 
+    top: 10px; 
+    padding: 4px 18px; 
+    border-radius: 12px; 
+    background-color: #8c8c8c; 
+    color: #fff; 
+}
+
+/*.logos { width: 500px;  margin: 0 auto; }*/
+.logos img {
+    margin: 8px;
+    margin-top: 38px;
+}
+/* flexslide style */
+.flexslider .slides {
+    min-height: 475px;
+    max-height: 490px;
+    background: url('../img/loading-sm.gif') center center no-repeat;
+}
+.flex-caption {
+    width: 96%;
+    padding: 2%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: none repeat scroll 0% 0% rgba(0,0,0,0.75);
+    color: #fff;
+    text-shadow: 0 -1px 0px rgba(0,0,0,0.3);
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+}
+
+h4.extras { 
+    margin-top: 24px;
+    color: #2f96b4;
+    text-shadow: 2px 2px 0 rgba(47,150,180,.25);
+}
+
+.deadline-past {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5
+}
+.contact-modal { margin-bottom: 0 !important; }
+/* keynote speakers */
+.media-body a span:hover { background-color: #006699 !important; }
+.keynote-well { 
+    float:left;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-right: 6px solid #8c8c8c;
+    border-radius: 35% 0 0 35%;
+    height: 175px;
+    overflow: visible;
+    margin-bottom: 30px;
+}
+#keynote-panel { height: 700px; }
+.keynote-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: #ccc;
+    box-shadow: 0 0 6px #555;
+    margin-top: 16px;
+    margin-left: -4px;
+    border: 3px solid #f7f7f7;
+}
+.keynote-well:hover { border-color: #3a87ad; }
+.keynote-well:hover .keynote-pic { border-color: #fff; }
+
+.media div { padding-bottom: 6px; }
+.media-body { padding-top: 7.5px; padding-left: 10px; }
+
+.label { padding: 8px 12px; }
+/* The big UPINLBS banner header on each page */
+#hero-wrap { display: none; }
+
+.hero-unit { 
+    padding: 5px; 
+    background-color: #fff;
+    font-family: "Carrois Gothic", serif;
+}
+
+.hero-unit p { 
+    letter-spacing: .075em; 
+    font-size: x-large;
+}
+
+
+/* Info boxes on homepage */
+.alert button { font-size: 24px !important; line-height: 24px !important; }
+.callbox { text-align: center; }
+.callbox p { line-height: 2em; font-size: 16px; }
+.callbox a { text-decoration: underline; }
+.callbox h2 { margin-bottom: 10px; }
+.width80 { width: 80%; }
+.alert-warning { margin-bottom: 10px; }
+#regcancel p { font-size: small; }
+
+/* social media icon hide */
+#social { display: none; }
+.twitter-timeline { height: 354px; }
+.fb-like { margin: 0; margin-top: 20px; margin-bottom: 10px; }
+
+.deadline-note { color: #FF8080; }
+/* Easy Chair Button mods */ 
+#easy-chair {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 12px 25px;
+    font-size: 24px;
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+.add-margin { margin-bottom: 20px; margin-top: 10px; }
+/* center anything with this */
+.center-pt { margin: 0 auto; text-align: center; }
+
+/* Primary expanded conference title in hero-unit */
+#branding { padding-top: 10px; padding-bottom: 25px; }
+
+#branding h1 { line-height: 1.5em; }
+
+/* Acronym title on sticky header */
+.brand { 
+    color: #fff !important; 
+    font-family: "Carrois Gothic", Georgia; 
+    letter-spacing: .15em; 
+}
+
+/* big image for larger screens */
+#cc-image {
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+
+/* set font for primary content */
+.row { 
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+/* specify weight for strong tag (Firefox and Chrome) */
+strong { font-weight: 700; }
+
+/* some footer adjustments */
+.no-link-underline a:hover, footer a:hover { text-decoration: none; }
+.no-link-underline a { font-size: 16px; }
+.no-link-underline i { margin-right: 10px; }
+
+footer a { padding-right: 4px; }
+
+/* used on footer list items */
+.pad-left { margin-left: 20px; }
+
+/* visual line break below primary content */
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+}
+
+#bottom-hr { margin-top: 32px; }
+
+/* remove bullets on lists */
+.span4 li { 
+    line-height: 3em; 
+    list-style: none;
+    padding-left: 4px;
+}
+
+/* remove margin reserved for list bullets */
+ul { margin: 0; }
+
+
+/* tabs TAMUCC organizer li */
+#tamucc-aside {
+    padding-left: 45px;
+    padding-bottom: 15px !important;
+}
+
+/* all list-items have these characteristics */
+.deadline-list-item, .contact-list-item {
+    box-shadow: 2px 2px 2px #999;
+    line-height: 2em;
+    background-color: #DBE8F5; /* #f6f6f6; */
+    font-weight: 700;
+    padding-right: 0;
+    padding-left: 5px;
+    border-radius:4px;
+}
+
+.centere { margin: 12px auto; }
+
+.contacts .deadline-list-item { margin-bottom: 8px; }
+
+/* add margin for some extra whitespace and mobile viewing */
+.contacts { margin-bottom: 300px; }
+
+/* all float-rights in *-list-items */
+.fl-right { 
+    float:right;
+    font-weight: 400;
+    background-color: #B2CFEB; /*  #e6e6e6; */
+    padding: 0 10px;
+    border-radius:0 4px 4px 0;
+}
+
+/* adds separation between deadline rows */
+.deadline-split { padding: .75em 0; }
+
+/* used to add padding below an individual section */
+.slot-module { padding-bottom: 12px; }
+
+/* specific visual styling for particular sections */
+#proceedings ul li {
+    list-style: none;
+    line-height: 2em;
+    padding-bottom: 25px;
+    font-size: 16px;
+}
+
+#exhibits ul li, #exhibits p { font-size: 16px; }
+#exhibits ul li { list-style: none;  }
+
+#exhibits p { line-height: 2em;  }
+
+.agenda-header { text-align: center; }
+
+/* green box for agenda/schedule times */
+.time-spot {
+    border: 2px solid #ABE8AB;
+    background-color: #D3F3D3;
+    padding: 2px 6px;
+    margin-right: 5px;
+}
+
+/* sections in agenda page */
+.dates ul li { 
+    margin-bottom: 15px; 
+    margin-top: 15px; 
+}
+
+/* updates event item styles */
+.event-item {
+    background-color: #E6E5E1;
+    padding: 25px 10px;
+    border-left: 4px solid #C6C5C1;
+    margin-bottom: 10px;
+}
+
+.event-time {
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.event-speaker {
+    font-weight:700;
+    color: #007bff;
+    font-size: 18px;
+}
+
+
+/*
+.ei-register { 
+    background-color: #d3d3f3;
+    border-color: #ababe7;
+}
+.ei-meal { 
+    background-color: #d3f3d3;
+    border-color: #abe8ab;
+}
+
+.ei-break {
+    background-color: #f3e3d3;
+    border-color: #e7c9ab;
+}
+.ei-keynote {
+ background-color: #d3f3d3;
+ border-color: #98E298;;
+}
+*/
+.ei-poster {
+    background-color: #d3e3f3;
+    border-color: #abc9e7;
+}
+
+.ei-left, .ei-right { }
+.ei-left { float: left; width: 261px; height: 100px; }
+.ei-right { float: left; width: 261px; height: 100px; }
+.event-container { height: 150px; margin-bottom: 10px; }
+.ei-date { padding: 10px; border: none; border-bottom: 4px solid #abc9e7; }
+.ei-dbl1 { margin-bottom: 0; border-bottom: 4px solid #d7abab; }
+.ei-dblp { margin-bottom: 0; border-bottom: 4px solid #abc9e7; }
+.ei-doubles {
+    background-color:  #f3d3d3;
+    border-color: #d7abab;
+}
+
+.show-me { display: none; }
+
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
+
+@media only screen
+and (max-width: 1024px) {
+
+    
+    #gmaps iframe { height: 250px; }
+    #gmaps .center-pt { display: block !important; }
+    .twitter-timeline { height: 250px; }
+    .pad-left { margin-left: 0; margin-top: 15px; }
+
+    /* stack footer contents on smaller screens */
+    footer a {
+        clear: both;
+        float: left;
+    }
+
+    #tamucc-aside { padding: 0; }
+
+    .deadline-split .deadline-list-item { font-size: small; padding: 0; }
+
+    .deadline-split .deadline-list-item .fl-right { 
+        font-size: small; 
+        padding: 0;
+        margin: 0;
+        width: 85px;
+        text-align:center;
+    }
+
+    .contacts { margin-bottom: 25px; }
+    .contacts .section { line-height: 2em; }
+    .span4 li { 
+        line-height: 2.5em; 
+    }
+
+    .row {
+        font-family: Arial, sans-serif !important;
+    }
+
+    /* hide header image */
+    #cc-image {
+        display: none;
+    }
+
+    /* trigger textual header visibility */
+    #hero-wrap { display: block; }
+
+    #proceedings ul li {
+        list-style: none;
+    }
+}
+
+@media only screen 
+and (min-width: 767px)
+and (max-width: 979px) {
+    /* remove contact titles */
+    .fl-right-contact { 
+        display: none;
+    }
+    .show-me { display: inline; }
+}
+
+@media only screen
+and (max-width: 1200px) {
+    .ei-left { float: left; width: 206px; height: 100px; }
+    .ei-right { float: left; width: 206px; height: 100px; }
+    .event-container { height: 150px; margin-bottom: 10px; }
+}
+
+@media only screen
+and (min-width: 1200px) {
+
+    #committee-list {
+        height: 800px;
+        border: 1px dotted #ccc;
+        border-radius: 4px;
+        padding-left: 10px;
+        
+    }
+
+    #committee-list:hover { 
+        border: 1px solid #ccc; 
+    }
+
+    .scrollable {
+        overflow: auto;
+    }
+
+    .contacts { font-size: 16px; }
+    .deadline-list-item, .contacts p { width: 95%; margin-bottom: 25px !important; }
+
+    #tamucc-aside {
+        position: relative;
+        top: -14px;
+    }
+    
+    .span4w { width: 100% !important; }
+}
+
+@media only screen
+and (min-width: 1025px) {
+
+    #tamucc-logo { display: block; }
+    #social { 
+        display: block;
+        position: absolute; 
+        top: 0; 
+        right: 0; 
+        padding: 10px; 
+    }
+
+    #social a { color: #999; padding: 25px 10px; }
+    #social a:hover { color: #fff; text-decoration: none; } 
+}
+
+@media only screen 
+and (max-width: 979px) 
+{
+    .ei-left { float: none; width: auto; height: 100px; }
+    .ei-right { float: none; width: auto; height: 100px; }
+    .event-container { height: auto; margin-bottom: 10px; }
+
+    .keynote-well { 
+        background-color: #fff;;
+        border-right: none;
+        border-radius: 0;
+        height: 275px;
+    }
+
+    .keynote-pic {
+        margin-top: 5px;
+    }
+}
+
+@media only screen 
+and (max-width: 481px){
+    .keynote-well {
+        height: 215px;
+    }
+}
+
+
+
+
+
+
